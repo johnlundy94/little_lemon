@@ -1,0 +1,84 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-left: -40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    grid-column: 2 / span 2;
+    min-width: 150px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-column: 4 / span 6;
+  }
+
+  .nav li {
+    list-style: none;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav li a:hover {
+    color: gray;
+  }
+
+  .toggle-button {
+    display: none;
+    grid-column: 9 / span 1;
+  }
+
+  .dropdown-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%; /* Position the dropdown below the toggle-button */
+    right: 0; /* Align the dropdown to the right of the toggle-button */
+    background-color: #fff; /* Customize the dropdown background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for the dropdown */
+    padding: 10px;
+  }
+
+  .dropdown-links li {
+    margin: 10px 0;
+  }
+
+  @media (max-width: 1150px) {
+    .toggle-button {
+      display: flex;
+    }
+
+    .nav {
+      display: none;
+      flex-direction: column;
+      grid-column: 9;
+      align-self: flex-end;
+    }
+
+    .nav.show {
+      display: flex;
+    }
+
+
+    .parent {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .logo {
+      grid-column: 2 / span 1;
+    }
+
+    .nav {
+      grid-column: 3 / span 1;
+      justify-content: flex-end;
+    }
+  }

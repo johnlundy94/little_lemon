@@ -1,0 +1,54 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.foot_logo {
+    grid-column: 2/ span 2;
+}
+
+.footer_nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.doormat_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.doormat_nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.doormat_nav li a:hover {
+    color: gray
+}
+
+.contact {
+    grid-column: 6/ span 1;
+}
+
+.socials {
+    grid-column: 8/ span 1;
+}
+
+.socials li a {
+    text-decoration: none;
+    color: black;
+}
+
+.socials li a:hover {
+    color: gray
+}
+
+h4 {
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    .footer_nav {
+        margin-top: 30px;
+    }
+ }
