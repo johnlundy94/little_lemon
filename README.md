@@ -17,7 +17,6 @@ npm i
 npm start
 \```
 
-
 ## Usage
 
 To make the most out of Little Lemon's features, head over to the reservations form. This form has been fortified with various technologies to guarantee a smooth user experience:
@@ -33,3 +32,8 @@ To make the most out of Little Lemon's features, head over to the reservations f
 ## Acknowledgments
 
 A heartfelt thank you to Meta's Front-End Certification program. This project would not have been possible without the knowledge and skills imbibed during the course.
+
+## Links
+
+- [Website](https://www.johnlittlelemon.com/)
+- [GitHub Repo](https://github.com/johnlundy94/little_lemon)
