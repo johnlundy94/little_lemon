@@ -6,9 +6,9 @@ import {
   Stack,
   Text,
   Box,
-  useMediaQuery
+  useMediaQuery,
 } from "@chakra-ui/react";
-import restaurantfood from "../assets/restaurantfood.jpg"
+import restaurantfood from "../assets/restaurantfood.jpg";
 
 const Hero = () => {
   const [isSmallScreen] = useMediaQuery("(max-width: 600px)");
@@ -24,8 +24,8 @@ const Hero = () => {
       justifyContent={isSmallScreen ? "flex-start" : "center"}
     >
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
-        <Stack spacing={1} w={"full"} maxW={"lg"} >
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+        <Stack spacing={1} w={"full"} maxW={"lg"}>
+          <Heading fontSize={{ base: "sm", md: "4xl", lg: "5xl" }}>
             <Text className="h1" as={"span"} color={"#F4CE14"}>
               Little Lemon
             </Text>
@@ -34,16 +34,13 @@ const Hero = () => {
               Chicago
             </Text>
           </Heading>
-          <Text
-            color={"white"}
-            fontSize={{ base: "md", lg: "lg" }}
-          >
+          <Text color={"white"} fontSize={{ base: "md", lg: "lg" }}>
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Link to={"/reservations"} >
-            <Box
+            <Link to={"/reservations"}>
+              <Box
                 as="button"
                 rounded={"full"}
                 bg={"#F4CE14"}

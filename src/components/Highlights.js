@@ -1,5 +1,11 @@
 // Highlights component
-import { Box, Button, Heading, useBreakpointValue, Container  } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  useBreakpointValue,
+  Container,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Cards from "./Cards";
 import "../styles/Highlights.css";
@@ -29,7 +35,10 @@ const projects = [
 ];
 
 const Highlights = () => {
-  const gridColumn = useBreakpointValue({ base: "repeat(1,1fr)", md: "repeat(3,1fr)" });
+  const gridColumn = useBreakpointValue({
+    base: "repeat(1,1fr)",
+    md: "repeat(3,1fr)",
+  });
 
   return (
     <Container maxWidth="container.xl" centerContent>
@@ -96,4 +105,3 @@ const Highlights = () => {
 };
 
 export default Highlights;
-

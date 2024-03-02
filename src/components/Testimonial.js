@@ -22,7 +22,7 @@ const Testimonial = ({ rating, name, photo, review }) => {
     >
       <Image
         objectFit="cover"
-        maxW={{ base: "80px", sm: "150px" }}
+        maxW={{ base: "60px", sm: "60px" }}
         src={photo}
         alt={`${name}'s profile photo`}
       />
@@ -33,11 +33,11 @@ const Testimonial = ({ rating, name, photo, review }) => {
           <HStack>
             <FontAwesomeIcon icon={faStar} size="1x" />
             <Text>{rating}</Text>
-            <VisuallyHidden>This user has a rating of {rating} stars</VisuallyHidden>
+            <VisuallyHidden>
+              This user has a rating of {rating} stars
+            </VisuallyHidden>
           </HStack>
-          <Text py="2">
-            {review}
-          </Text>
+          <Text py="2">{review}</Text>
         </CardBody>
       </Stack>
     </Card>

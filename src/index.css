@@ -10,13 +10,19 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.h1,
+.h1 {
+	margin-block: 0;
+	margin-inline: 0;
+	font-family: "Karla", sans-serif;
+	line-height: 1;
+	font-weight: bold;
+}
 .h2 {
 	margin-block: 0;
 	margin-inline: 0;
-	font-family: "Markazi Text", serif;
-	font-weight: 400;
+	font-family: "Karla", sans-serif;
 	line-height: 1;
+	font-weight: 500px;
 }
 
 .h1 {

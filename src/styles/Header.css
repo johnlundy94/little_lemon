@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+.header-container {
+  position: relative;
+  z-index: 100;
+}
+
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -15,7 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    grid-column: 4 / span 6;
+    grid-column: 6 / span 6;
   }
 
   .nav li {
@@ -41,44 +48,43 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100%; /* Position the dropdown below the toggle-button */
-    right: 0; /* Align the dropdown to the right of the toggle-button */
-    background-color: #fff; /* Customize the dropdown background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for the dropdown */
-    padding: 10px;
+    top: 100%; 
+    right: 0; 
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
 
   .dropdown-links li {
     margin: 10px 0;
   }
 
+  .links {
+    margin-block: 0;
+    margin-inline: 0;
+    font-family: "Karla", sans-serif;
+    line-height: 1;
+    font-weight: 500px;
+  }
+
   @media (max-width: 1150px) {
-    .toggle-button {
+    /* .toggle-button {
       display: flex;
+      grid-column: 10;
     }
 
     .nav {
+      position: absolute;
       display: none;
       flex-direction: column;
-      grid-column: 9;
-      align-self: flex-end;
+      grid-column: 9 / span 3;
+      z-index: 100;
     }
 
     .nav.show {
       display: flex;
     }
 
-
-    .parent {
-      grid-template-columns: 1fr 2fr 1fr;
-    }
-
     .logo {
       grid-column: 2 / span 1;
-    }
-
-    .nav {
-      grid-column: 3 / span 1;
-      justify-content: flex-end;
-    }
+    } */
   }
